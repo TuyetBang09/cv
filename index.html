@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative CV</title>
+    <link rel="stylesheet" href="cv_net.css">
+</head>
+<body>
+     <!-- Language Switcher -->
+     <div class="language-switcher">
+        <a href="?lang=en">English</a> | <a href="?lang=vi">Tiếng Việt</a>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <div class="profile-container">
+            <div class="profile-background"></div>
+            <div class="profile">
+                <img src="images/a.jpg" alt="Nguyễn Thị Tuyết Băng">
+                <h1>Nguyễn Thị Tuyết Băng</h1>
+                </div>
+                <div class="social-links">
+                    <a href="https://facebook.com" target="_blank">Facebook</a>
+                    <a href="mailto:anthony@company.com">Email</a>
+                    <a href="https://github.com" target="_blank">GitHub</a>
+                    <a href="https://youtube.com" target="_blank">Youtube</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Introduce yourself & Basic Information -->
+    <section class="Introduce yourself">
+        <h2>Introduce yourself</h2>
+        <p>Xin chào, tôi là sinh viên năm hai tại Đại học Bình Dương. Lý do tôi chọn CNTT là vì tôi yêu thích và nhận thấy sự phát triển mạnh mẽ của nó trong tương lai.</p>
+
+        <div class="basic-info">
+            <h2>Basic Information</h2>
+            <p><strong>Age:</strong> 20</p>
+            <p><strong>Email:</strong> <a href="mailto:23050105@student.bdu.edu.vn.com">23050105@student.bdu.edu.vn.com</a></p>
+            <p><strong>Phone:</strong> <a href="tel:+84354718053">+84 354718053</a></p>
+            <p><strong>Address:</strong> VietNamese, Chine, Thailand, </p>
+        </div>
+    </section>
+
+    <!-- Professional Skills -->
+    <section class="skills">
+        <h2>Professional Skills</h2>
+        <div class="skill">
+            <p id="variable_skill">HTML</p>
+            <div class="progress"><div style="width: 50%"></div></div>
+            <p>50%</p>
+        </div>
+        <div class="skill">
+            <p id="variable_skill">JavaScript</p>
+            <div class="progress"><div style="width: 50%"></div></div>
+            <p>50%</p>
+
+        </div>
+        <div class="skill">
+            <p id="variable_skill">CSS</p>
+            <div class="progress"><div style="width: 50%"></div></div>
+            <p>50%</p>
+
+        </div>
+        <div class="skill">
+            <p id="variable_skill">Photoshop</p>
+            <div class="progress"><div style="width: 50%"></div></div>
+            <p>50%</p>
+
+        </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section class="portfolio">
+        <h2>Portfolio</h2>
+        <div class="gallery">
+            <div class="item" onclick="showImage('laptop.jpg')"><img src="images/laptop.png" alt="Laptop"></div>
+            <div class="item" onclick="showImage('album.jpg')"><img src="images/album.png" alt="Album"></div>
+            <div class="item" onclick="showImage('camera.jpg')"><img src="images/cam.png" alt="Camera"></div>
+        </div>
+    </section>
+
+    <!-- Work Experience -->
+    <section class="work">
+        <h2>Work Experience</h2>
+        <p> 💡 Kỹ năng kỹ thuật & Học tập 
+            Tìm hiểu và thực hành với GitHub để quản lý mã nguồn. 
+            Tìm hiểu về ReactJS, Bootstrap để xây dựng giao diện web hiện đại. 
+            Tích cực tham gia các khóa học và sự kiện trực tuyến về lập trình</p>
+    </section>
+
+    <!-- Education -->
+    <section class="education">
+        <h2>Education</h2>
+           <p> 🎓 Sinh viên Trường Đại học Bình Dương (2025 - nay) 
+            Lĩnh vực nghiên cứu: Công nghệ thông tin / Khoa học máy tính 
+            Các chủ đề chính: Lập trình web, Cơ sở dữ liệu, Lập trình hướng đối tượng, Cấu trúc dữ liệu và thuật toán 
+            Dự án cá nhân: Xây dựng danh mục đầu tư cá nhân, thiết kế website giới thiệu sản phẩm </p>
+            
+    </section>
+
+    <!-- Hobbies -->
+    <section class="hobbies">
+        <h2>Hobbies</h2>
+        <p>read stories, listening to music, take a walk, Take scene shots</p>
+        <div class="hobbie_img">
+            <div class="item" onclick="showImage('read stories.jpg')"><img src="images/b.png" alt="read stories"></div>
+        <div class="item" onclick="showImage('listening to music.jpg')"><img src="images/c.png" alt="Listening to music"></div>
+        <div class="item" onclick="showImage('take a walk.jpg')"><img src="images/d.png" alt="take a walk"></div>
+        <div class="item" onclick="showImage('Take scene shots.jpg')"><img src="images/e.png" alt="Take scene shots"></div>
+        </div>
+    </section>       
+
+    <!-- Contact Me -->
+    <section class="contact">
+        <h2>Contact Me</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message"></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <script>
+        function showImage(image) {
+            alert("Show image: " + image);
+        }
+    </script>
+  
+
+</body>
+</html>
